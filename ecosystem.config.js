@@ -7,7 +7,7 @@ module.exports = {
         {
             name: '7dso',
             cwd: 'C:/projects/7dso-db',
-            script: 'node_modules/.bin/next',
+            script: 'node_modules/next/dist/bin/next',
             args: 'start -p 3001 -H 0.0.0.0',
             watch: false,
             exec_mode: 'fork',
@@ -16,7 +16,7 @@ module.exports = {
         {
             name: 'sd',
             cwd: 'C:/projects/stardive-db',
-            script: 'node_modules/.bin/next',
+            script: 'node_modules/next/dist/bin/next',
             args: 'start -p 3002 -H 0.0.0.0',
             watch: false,
             exec_mode: 'fork',
