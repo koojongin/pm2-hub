@@ -7,14 +7,14 @@ module.exports = {
         {
             name: '7dso',
             cwd: 'C:/projects/7dso-db',
-            script: 'npm',
+            script: 'npm.cmd',
             args: 'start',
             watch: false
         },
         {
-            name: 'stardive',
+            name: 'sd',
             cwd: 'C:/projects/stardive-db',
-            script: 'npm',
+            script: 'npm.cmd',
             args: 'start',
             watch: false
         }
