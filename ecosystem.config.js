@@ -7,16 +7,20 @@ module.exports = {
         {
             name: '7dso',
             cwd: 'C:/projects/7dso-db',
-            script: 'npm.cmd',
-            args: 'start',
-            watch: false
+            script: 'node_modules/.bin/next',
+            args: 'start -p 3001 -H 0.0.0.0',
+            watch: false,
+            exec_mode: 'fork',
+            interpreter: 'node'
         },
         {
             name: 'sd',
             cwd: 'C:/projects/stardive-db',
-            script: 'npm.cmd',
-            args: 'start',
-            watch: false
+            script: 'node_modules/.bin/next',
+            args: 'start -p 3002 -H 0.0.0.0',
+            watch: false,
+            exec_mode: 'fork',
+            interpreter: 'node'
         }
     ]
 };
