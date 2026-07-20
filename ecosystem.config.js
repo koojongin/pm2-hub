@@ -21,6 +21,15 @@ module.exports = {
             watch: false,
             exec_mode: 'fork',
             interpreter: 'node'
+        },
+        {
+            name: 'entaria',
+            cwd: 'C:/projects/entaria',
+            script: 'node_modules/next/dist/bin/next',
+            args: 'start -p 3003 -H 0.0.0.0',
+            watch: false,
+            exec_mode: 'fork',
+            interpreter: 'node'
         }
     ]
 };
