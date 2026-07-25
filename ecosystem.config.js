@@ -30,6 +30,15 @@ module.exports = {
             watch: false,
             exec_mode: 'fork',
             interpreter: 'node'
+        },
+        {
+            name: 'ds',
+            cwd: 'C:/projects/dragonsword-awakening',
+            script: 'node_modules/next/dist/bin/next',
+            args: 'start -p 3004 -H 0.0.0.0',
+            watch: false,
+            exec_mode: 'fork',
+            interpreter: 'node'
         }
     ]
 };
