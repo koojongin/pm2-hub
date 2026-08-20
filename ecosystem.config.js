@@ -25,11 +25,11 @@ module.exports = {
         {
             name: 'entaria',
             cwd: 'C:/projects/entaria',
-            script: 'npx',
-            args: 'tsx server.ts',
-            watch: false,
+            script: 'npm',
+            args: 'run start', // package.json의 "start" 스크립트 실행
+            instances: 1,      // 👈 인스턴스 1개로 명시적 고정
             exec_mode: 'fork',
-            interpreter: 'node',
+            watch: false,
             env: {
                 NODE_ENV: 'production',
                 PORT: 3003
