@@ -25,11 +25,15 @@ module.exports = {
         {
             name: 'entaria',
             cwd: 'C:/projects/entaria',
-            script: 'node_modules/next/dist/bin/next',
-            args: 'start -p 3003 -H 0.0.0.0',
+            script: 'npx',
+            args: 'tsx server.ts',
             watch: false,
             exec_mode: 'fork',
-            interpreter: 'node'
+            interpreter: 'node',
+            env: {
+                NODE_ENV: 'production',
+                PORT: 3003
+            }
         },
         {
             name: 'ds',
