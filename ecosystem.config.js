@@ -30,6 +30,7 @@ module.exports = {
             instances: 1, // 👈 1개로 고정
             exec_mode: 'fork',
             watch: false,
+            windowsHide: true,
             env: {
                 NODE_ENV: 'production',
                 PORT: 3003
