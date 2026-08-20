@@ -25,9 +25,9 @@ module.exports = {
         {
             name: 'entaria',
             cwd: 'C:/projects/entaria',
-            script: 'npm',
-            args: 'run start', // package.json의 "start" 스크립트 실행
-            instances: 1,      // 👈 인스턴스 1개로 명시적 고정
+            script: 'node_modules/tsx/dist/cli.mjs', // 👈 tsx 실행 파일을 직접 지정
+            args: 'server.ts',
+            instances: 1, // 👈 1개로 고정
             exec_mode: 'fork',
             watch: false,
             env: {
