@@ -43,6 +43,16 @@ module.exports = {
             watch: false,
             exec_mode: 'fork',
             interpreter: 'node'
+        },
+        // nginx를 대체하는 리버스 프록시. Caddyfile은 caddy.exe와
+        // 같은 폴더(cwd)에 있어야 합니다.
+        {
+            name: 'caddy',
+            cwd: 'C:/caddy',
+            script: 'caddy.exe',
+            args: 'run --config Caddyfile',
+            watch: false,
+            exec_mode: 'fork',
         }
     ]
 };
